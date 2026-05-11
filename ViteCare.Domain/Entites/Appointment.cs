@@ -10,8 +10,6 @@ namespace ViteCare.Domain.Entites
     public class Appointment
     {
         public int Id { get; set; }
-        public Guid PatientId { get; set; }
-        public int SlotId { get; set; }
         public AppointmentStatus Status { get; set; }
         public string PatientComplaint { get; set; }
         public string DoctorNotes { get; set; }
@@ -20,7 +18,10 @@ namespace ViteCare.Domain.Entites
         public DateTime UpdatedAt { get; set; }
 
         public Patient Patient { get; set; }
+        public Guid PatientId { get; set; }
+        
         public Slot Slot { get; set; }
+        public int SlotId { get; set; }
         public Payment Payment { get; set; }
     }
 }

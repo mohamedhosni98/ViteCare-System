@@ -10,7 +10,7 @@ namespace ViteCare.Domain.Entites
     public class Payment
     {
         public Guid Id { get; set; }
-        public int AppointmentId { get; set; }
+       
         public string TransactionId { get; set; }
         public decimal Amount { get; set; }
         public string Currency { get; set; }
@@ -19,6 +19,7 @@ namespace ViteCare.Domain.Entites
         public string ProviderResponse { get; set; }
         public DateTime CreatedAt { get; set; }
 
+        public int AppointmentId { get; set; }
         public Appointment Appointment { get; set; }
 
     }

@@ -1,4 +1,4 @@
-
+using ViteCare.Infrastructure;
 namespace ViteCare
 {
     public class Program
@@ -13,6 +13,7 @@ namespace ViteCare
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
+            builder.Services.AddInfraStructure(builder.Configuration);
 
             var app = builder.Build();
 
