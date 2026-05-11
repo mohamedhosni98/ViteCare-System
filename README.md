@@ -1,4 +1,4 @@
-# ViteCare System 🏥
+# ViteCare System 
 
 An enterprise-grade **Clinic Management System** built with **.NET 8** and **Next.js**, following **Clean Architecture** and **SOLID** principles.
 
